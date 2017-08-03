@@ -10,12 +10,13 @@ public class Sieve extends Prime {
         generatePrimes();
     }
 
-    private void generatePrimes() {
+    private void generatePrimes() {                     //ToDo Nie działa!!!
         for (int i = 2; i <= Math.sqrt(n); i++) {
             if (sieve[i]) {
                 for (int j = 2 * i; j <= n; j = j + i) {
-                    sieve[i] = false;
+                    sieve[j] = false;
                 }
+                sieve[i] = false;
             }
         }
     }
