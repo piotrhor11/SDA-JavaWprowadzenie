@@ -1,5 +1,5 @@
 
-public class Ingredient {
+public class Ingredient {           //FixMe Problem z klasą o tej samej nazwie w dniu 8.
     private String name;
 
     public Ingredient(String name) {

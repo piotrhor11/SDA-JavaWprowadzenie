@@ -17,6 +17,7 @@ public class Main {
 
         Client piotr = new Client();
         piotr.addAllergy(ham);
-        System.out.println(piotr.isDead(sandwitch));
+        System.out.printf("Czy klient po zjedzeniu posiłku skona na skutek alergii: ");
+        System.out.println(piotr.isDead(sandwitch) ? "Tak" : "Nie");
     }
 }

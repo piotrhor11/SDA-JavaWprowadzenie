@@ -10,7 +10,7 @@ public class Sieve extends Prime {
         generatePrimes();
     }
 
-    private void generatePrimes() {                     //ToDo Nie działa!!!
+    private void generatePrimes() {
         for (int i = 2; i <= Math.sqrt(n); i++) {
             if (sieve[i]) {
                 for (int j = 2 * i; j <= n; j = j + i) {
