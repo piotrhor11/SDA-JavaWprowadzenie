@@ -33,7 +33,7 @@ public class Dictionary {
                 break;                      //Bez breaka przeszukalibysmy calos i usunelibysmy ostatni znaleziony
             }
         }
-        removeWorld(toRemove);              //Usuwamy za petla, bo nie da sie usuwac z kolekcji, ktora przegladamy
+        removeWorld(toRemove);              //Usuwamy za petlą, bo nie da sie usuwac z kolekcji, ktora przegladamy
     }
 
 }

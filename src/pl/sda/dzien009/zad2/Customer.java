@@ -1,3 +1,5 @@
+package pl.sda.dzien009.zad2;
+
 import java.util.HashSet;
 
 public class Customer {

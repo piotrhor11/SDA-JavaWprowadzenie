@@ -1,5 +1,6 @@
+package pl.sda.dzien009.zad2;
 
-public class Ingredient {           //FixMe Problem z klasą o tej samej nazwie w dniu 8.
+class Ingredient {           //FixMe Problem z klasą o tej samej nazwie w dniu 8.
     private String name;
 
     public Ingredient(String name) {
@@ -24,7 +25,7 @@ public class Ingredient {           //FixMe Problem z klasą o tej samej nazwie 
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Ingredient that = (Ingredient) o;
+        Ingredient that = (Ingredient) o;           //Rzutujemy obiekt (przekazany jako argument) na klasę Ingredient, bo porównywać będziemy obiekty po polu "name" z tej klasy
 
         return name != null ? name.equals(that.name) : that.name == null;
 
