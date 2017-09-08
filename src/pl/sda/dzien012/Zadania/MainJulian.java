@@ -1,4 +1,4 @@
-package day12;
+package pl.sda.dzien012.Zadania;
 
 import java.time.*;
 import java.time.temporal.TemporalAdjusters;
@@ -9,9 +9,9 @@ import java.util.Scanner;
  */
 public class MainJulian {
     public static void main(String[] args) {
-//        isFriday13th();
-//        printMondays();
-        insignificantr();
+//        isFriday13th();           //Zad1
+//        printMondays();           //Zad2
+        insignificantr();           //Zad4
     }
 
     private static void isFriday13th() {
@@ -34,8 +34,8 @@ public class MainJulian {
         int year = input.nextInt();
 
         LocalDate current = LocalDate.ofYearDay(year, 1).minusDays(1);
-
         current = current.with(TemporalAdjusters.next(DayOfWeek.MONDAY));
+
         while (current.getYear() <= year) {
             System.out.println(current);
             current = current.with(TemporalAdjusters.next(DayOfWeek.MONDAY));
@@ -45,7 +45,7 @@ public class MainJulian {
     private static void insignificantr() {
         // WCZYTYWANIE DANYCH
         Scanner in = new Scanner(System.in);
-        System.out.print("Enter date of birth as such (yyy-MM-dd): ");
+        System.out.print("Enter date of birth as such (yyyy-MM-dd): ");
         String date = in.nextLine();
         System.out.print("Enter time unit [m/d/h]: ");
         String unit = in.nextLine();

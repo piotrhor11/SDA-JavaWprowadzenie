@@ -1,4 +1,4 @@
-package day13;
+package pl.sda.dzien013.day13;
 
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -24,8 +24,8 @@ public class Streams {
             do {
                 c = (char) inputReader.read();
                 System.out.println(c);
-            } while(c != 's');
-        }finally {
+            } while (c != 's');
+        } finally {
             if (inputReader != null) {
                 inputReader.close();
             }

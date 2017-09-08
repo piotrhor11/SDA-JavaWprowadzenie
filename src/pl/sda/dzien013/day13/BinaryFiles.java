@@ -19,7 +19,7 @@ public class BinaryFiles {
             ObjectInputStream ois = new ObjectInputStream(fis);
             Car car = (Car) ois.readObject();
             ois.close();
-            System.out.println(car.getModel() + car.getPrice());
+            System.out.println("Reading from file: " + file + "\nModel: " + car.getModel() + ", Price: " + car.getPrice());
         } catch (IOException e) {
             System.err.println("IO failed");
             e.printStackTrace();

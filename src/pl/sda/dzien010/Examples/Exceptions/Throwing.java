@@ -7,12 +7,12 @@ public class Throwing {
 
     public static void main(String[] args) {
         Integer i = new Integer(42);
-        System.out.println(getString(i));
-        System.out.println(getString2(i));
-
-//        i = null;
 //        System.out.println(getString(i));
 //        System.out.println(getString2(i));
+//
+        i = null;
+        System.out.println(getString(i));
+        System.out.println(getString2(i));
         System.out.println("Koniec Metody");
     }
 

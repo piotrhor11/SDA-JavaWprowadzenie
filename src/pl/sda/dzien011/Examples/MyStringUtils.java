@@ -1,14 +1,11 @@
-package day11;
-
-import java.util.ArrayList;
-import java.util.List;
+package pl.sda.dzien011.Examples;
 
 /**
  * Created by sp0rk on 11/07/17.
  */
 public class MyStringUtils {
 
-    public static boolean isLowerCase (String s1) {
+    public static boolean isLowerCase(String s1) {
         return s1.equals(s1.toLowerCase());
     }
 

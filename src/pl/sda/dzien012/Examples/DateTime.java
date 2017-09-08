@@ -16,8 +16,8 @@ public class DateTime {
 //        dateTimeLocal();
 //        zoned();
 //        periodDuration();
-        formatting();
-//        temporalAdjusters();
+//        formatting();
+        temporalAdjusters();
     }
 
     private static void dateLocal() {
@@ -127,8 +127,8 @@ public class DateTime {
 
         System.out.println("periodDuration " + coursePeriod);
         System.out.println("duration " + courseDuration);
-        System.out.println("days" + coursePeriod.getDays());
-        System.out.println("seconds" + courseDuration.getSeconds());
+        System.out.println("days " + coursePeriod.getDays());
+        System.out.println("seconds " + courseDuration.getSeconds());
 
         long days = courseDuration.toDays();
         long hours = courseDuration.minusDays(days).toHours();

@@ -7,16 +7,16 @@ import java.util.Arrays;
  */
 public class Handling {
     public static void main(String[] args) {
-//        Integer i = new Integer(42);
-//        System.out.println(checkedGetString(i));
-//        System.out.println(checkedGetStringPlusOne(i));
-//
-//        i = null;
-//        System.out.println(checkedGetString(i));
-//        System.out.println(checkedGetStringPlusOne(i));
+        Integer i = new Integer(42);
+        System.out.println(checkedGetString(i));
+        System.out.println(checkedGetStringPlusOne(i));
 
-//        System.out.println(Arrays.toString(divideOneToTenArray(0, 5, 2)) + "\n");
-//        System.out.println(Arrays.toString(divideOneToTenArray(0, 20, 2)) + "\n");
+        i = null;
+        System.out.println(checkedGetString(i));
+        System.out.println(checkedGetStringPlusOne(i));
+
+        System.out.println(Arrays.toString(divideOneToTenArray(0, 5, 2)) + "\n");
+        System.out.println(Arrays.toString(divideOneToTenArray(0, 20, 2)) + "\n");
         System.out.println(Arrays.toString(divideOneToTenArray(0, 5, 0)) + "\n");
     }
 

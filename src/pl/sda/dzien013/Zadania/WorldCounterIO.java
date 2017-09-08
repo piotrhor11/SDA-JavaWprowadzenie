@@ -30,7 +30,7 @@ public class WorldCounterIO {
         return content;
     }
 
-    public static HashMap<String, Integer> countWorlds(String text) {
+    private static HashMap<String, Integer> countWorlds(String text) {
         HashMap<String, Integer> counter = new HashMap<>();
 
         String noWhiteSpace = text.trim();
