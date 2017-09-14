@@ -30,4 +30,9 @@ public class Zoo {
         }
     }
 
+    public HashSet<Animal> getAnimals() {
+        return zoo;
+    }
+
+
 }

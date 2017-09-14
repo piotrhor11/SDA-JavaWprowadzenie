@@ -19,8 +19,9 @@ public class Main {
         hR.run();
         hR.run();
 
+        System.out.println("---");
         Thread t = new Thread(hR);
-        t.start();                      //odpalamy to, a to czeka 2s
+        t.start();                              //odpalamy hR w nowym wątku "t"
         System.out.println(t.getName());        //to wyswietli sie najpierw, bo to na gorze czeka 2 s i dopiero sie wyswietla.
 
         Thread t2 = new Thread(new Runnable() {
@@ -31,10 +32,10 @@ public class Main {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                System.out.println("Yo" + Thread.currentThread().getName());
+                System.out.println("Yo: " + Thread.currentThread().getName());       //"Yo..." z wątku t2 Wyświetli się przed wątkiem t, bo ma krótszy timeout
             }
         });
-        t2.start();
+        t2.start();          //odpalamy drugi wątek z anonimowym obiektem podanym w argumencie
     }
 
     private static void executors() {

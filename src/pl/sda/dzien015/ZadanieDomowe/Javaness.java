@@ -15,4 +15,9 @@ public class Javaness extends Cat {
     public void speak() {
         System.out.println("Meow for Java!!!");
     }
+
+    @Override
+    public void beCute() {
+        System.out.println("Give me my food peasant! I'm tired of being so cute all the time!!!");
+    }
 }

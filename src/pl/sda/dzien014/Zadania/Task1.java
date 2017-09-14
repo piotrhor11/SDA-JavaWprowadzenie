@@ -54,18 +54,18 @@ public class Task1 {
 
 
     public static void main(String[] args) {
+        System.out.println("Pair:");
         Pair<String> name = new Pair<>("Piotr", "Horbatowski");
         Pair<Double> gpsCoords = new Pair<>(51.345, 16.567);
-
         System.out.println(name.getFirst() + " " + name.getSecond());
         System.out.println(gpsCoords.getFirst() + " " + gpsCoords.getSecond());
         System.out.printf("A tu są dane GPS: %.2f i %.2f", gpsCoords.first, gpsCoords.second);
-        System.out.println();
 
+        System.out.println("\n\nTriple:");
         Triple<Integer> dimensions = new Triple<>(5, 6, 7);
         System.out.printf("A tu jest suma wymiarów: %d", dimensions.getFirst() + dimensions.getSecond() + dimensions.getThird());
-        System.out.println();
 
+        System.out.println("\n\nHeterogenous Pair:");
         HeterogeneusPair<Integer, String> wpis = new HeterogeneusPair<>(15011982, "Piotr H.");
         System.out.printf("A tu mamy %s %d", wpis.getSecond(), wpis.getFirst());
 

@@ -10,7 +10,7 @@ public class ContainerUtils {
 //        for (T item : items) {
 //            list.add(item);
 //        }
-        Collections.addAll(list, items);                //Alternatywa do naszego foreach, z paczki Collections
+        Collections.addAll(list, items);                //Alternatywa z paczki Collections do naszego foreach
         return list;
     }
 

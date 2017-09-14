@@ -1,6 +1,6 @@
 package pl.sda.dzien009.zad2;
 
-class Ingredient {           //FixMe Problem z klasą o tej samej nazwie w dniu 8.
+class Ingredient {
     private String name;
 
     public Ingredient(String name) {

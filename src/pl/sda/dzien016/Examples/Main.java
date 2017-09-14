@@ -54,7 +54,7 @@ public class Main {
 
     private static void lambdasCollections() {
         List<Integer> list = new ArrayList<>();     //Możemy napisać tylko List, bo ArrayList dziedziczy po List
-        Collections.addAll(list, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15);       //Używamy triku - metody addAll z paczki Collections
+        Collections.addAll(list, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15);       //Używamy utilsa - metody addAll() z paczki Collections
 
         list.forEach(i -> System.out.println(i));       //Wrzucamy do For Each lambdę
 //        list.forEach(System.out::println);        TO SAMO CO WYŻEJ        //Podajemy paczkę (System.out) oraz metodę (println) oddzielone "::".
@@ -81,7 +81,10 @@ public class Main {
                 .forEach(System.out::println);
 
         System.out.println("----");
-        System.out.println(list.stream().filter(i -> i < 5).reduce((a, b) -> a + b).get());     //reduce zwraca 1 element
+        System.out.println(list.stream()
+                .filter(i -> i < 5)
+                .reduce((a, b) -> a + b)
+                .get());     //reduce zwraca 1 element
 
         System.out.println("----");
         list.stream()
